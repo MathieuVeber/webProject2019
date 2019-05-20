@@ -62,7 +62,7 @@
                   <div class="modal-body">
                     <div class="col-8">
                       <?php $res=explode('/',$car->problem_picture) ?>
-                      <img class="img-fluid" src="{{URL::asset('storage/'.$res[1])}}" alt="Photo du choc">
+                      <img class="img-fluid" src="{{secure_asset('storage/'.$res[1])}}" alt="Photo du choc">
                   </div>
                 </div>
               </div>

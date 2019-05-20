@@ -43,7 +43,7 @@
       <div class="card-body">
         <h5 class="card-title text-info text-center">{{$car->make}}</h5>
         <?php $res=explode('/',$car->problem_picture) ?>
-        <img class="d-block w-100" src="{{URL::asset('storage/'.$res[1])}}" alt="{{$car->model}} à vendre">
+        <img class="d-block w-100" src="{{secure_asset('storage/'.$res[1])}}" alt="{{$car->model}} à vendre">
 
 
 
