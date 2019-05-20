@@ -1,0 +1,92 @@
+@extends('layouts.navbar')
+
+@section('head')
+<title> Garage Azur VO | Accueil </title>
+@endsection
+
+@section('content')
+
+<div class="container" id="page">
+
+@if($forSale->count()>0)
+<div class="row" id="sellingHome">
+
+  <div class="col-lg-3">
+  </div>
+
+  <div class="col-12 col-lg-6 justify-content-center">
+    <div class="card border-info text-center">
+      <h5 class="card-body text-info"> En Vente </h5>
+    </div>
+  </div>
+
+</div>
+
+<div class="ajustMargin">
+</div>
+@endif
+
+@foreach($forSale as $car)
+@if($car->problem_picture != null)
+
+<div class="row">
+
+  <div class="col-lg-3">
+  </div>
+
+
+  <!-- forsale -->
+
+  <div class="col-12 col-lg-6 justify-content-center" id="contactHome">
+    <div class="card border-info">
+      <h5 class="card-header text-info"> {{$car->model}} </h5>
+      <div class="card-body">
+        <h5 class="card-title text-info text-center">{{$car->make}}</h5>
+        <?php $res=explode('/',$car->problem_picture) ?>
+        <img class="d-block w-100" src="{{URL::asset('storage/'.$res[1])}}" alt="{{$car->model}} à vendre">
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ajustMargin">
+</div>
+
+@endif
+@endforeach
+
+
+<div class="row">
+
+  <div class="col-lg-3">
+  </div>
+
+
+  <!-- Contact -->
+
+  <div class="col-12 col-lg-6 justify-content-center" id="contactHome">
+    <div class="card border-info">
+      <h5 class="card-header text-info"> Pour en savoir plus... </h5>
+      <div class="card-body">
+        <h5 class="card-title text-info text-center">Contactez-nous !</h5>
+
+        <p class="card-text text-center text-info">Adresse email   : azvgarage@gmail.com</p>
+        <p class="card-text text-center text-info">N° de Téléphone : 09 53 944 944</p>
+        <p class="card-text text-center text-info">Adresse : 850, Route de Vence</p>
+        <p class="card-text text-center text-info">06800 Cagnes Sur Mer</p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ajustMargin">
+</div>
+</div>
+@endsection
