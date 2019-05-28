@@ -121,12 +121,12 @@ class CarController extends Controller
     $search=request('license_plate');
 
     if ($search == 'tous') {
-      $results = Car::simplePaginate(4);
+      $results = Car::simplePaginate(6);
     }
     else {
       $results=Car::when(!empty($search), function ($query) use ($search) { return $query
                   ->where('license_plate', 'like', '%' . $search . '%');})
-                  ->simplePaginate(4);
+                  ->simplePaginate(6);
     }
 
     // No Result -> Back home
