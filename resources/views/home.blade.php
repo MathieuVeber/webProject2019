@@ -8,6 +8,55 @@
 
 <div class="container" id="page">
 
+
+  <div class="row">
+
+    <div class="col-lg-3">
+    </div>
+
+    <div class="col-12 col-lg-6 justify-content-center">
+      <div class="card border-info text-center">
+        <h5 class="card-body text-info" id="sellingHome"> Actualités </h5>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ajustMargin">
+  </div>
+
+
+
+  <div class="row">
+
+    <div class="col-lg-3">
+    </div>
+
+
+    <!-- post -->
+
+    <div class="col-12 col-lg-6 justify-content-center">
+      <div class="card border-info">
+        <h5 class="card-header text-info"> Nos nouveaux locaux ! </h5>
+        <div class="card-body">
+          <img class="d-block w-100" src="{{secure_asset('pictures/accueil.jpg')}}" alt="Accueil refait à neuf">
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ajustMargin">
+  </div>
+
+
+
+
+
+
 @if($forSale->count()>0)
 <div class="row">
 
