@@ -53,7 +53,7 @@
           </div>
         </a>
       </div>
-</div>
+    </div>
 
       @endforeach
     </div>
@@ -62,6 +62,13 @@
 </div>
 
 <div class="row">
-{{ $cars->links() }}
+
+  <div class="col-lg-3">
+  </div>
+
+  <div class="col-12 col-lg-6 justify-content-center">
+    {{ $cars->links() }}
+  </div>
+
 </div>
 @endsection

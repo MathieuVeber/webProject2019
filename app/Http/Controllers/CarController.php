@@ -126,7 +126,7 @@ class CarController extends Controller
     else {
       $results=Car::when(!empty($search), function ($query) use ($search) { return $query
                   ->where('license_plate', 'like', '%' . $search . '%');})
-                  ->simplePaginate(5);
+                  ->simplePaginate(4);
     }
 
     // No Result -> Back home

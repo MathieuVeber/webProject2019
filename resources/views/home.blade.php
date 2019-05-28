@@ -39,9 +39,9 @@
 
   <div class="col-12 col-lg-6 justify-content-center" id="contactHome">
     <div class="card border-info">
-      <h5 class="card-header text-info"> {{$car->model}} </h5>
+      <h5 class="card-header text-info"> {{$car->make}} </h5>
       <div class="card-body">
-        <h5 class="card-title text-info text-center">{{$car->make}}</h5>
+        <h5 class="card-title text-info text-center">{{$car->model}}</h5>
         <?php $res=explode('/',$car->problem_picture) ?>
         <img class="d-block w-100" src="{{$car->problem_picture}}" alt="{{$car->model}} à vendre">
 
