@@ -7,7 +7,7 @@
 
 @section('content')
 
-</div>
+<div class="container" id="page">
 
 <div class="ajustMargin">
 </div>
@@ -65,6 +65,8 @@
       {{ $cars->links() }}
     </div>
   </div>
+
+</div>
 
 </div>
 @endsection

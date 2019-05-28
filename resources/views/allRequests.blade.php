@@ -62,7 +62,8 @@
                   <div class="modal-body">
                     <div class="col-8">
                       <?php $res=explode('/',$car->problem_picture) ?>
-                      <img class="img-fluid" src="{{secure_asset('/storage/'.$res[1])}}" alt="Photo du choc">
+                      <img class="img-fluid" src="{{secure_asset('/pictures/'.$res[1])}}" alt="Photo du choc">
+                      {{-- TO NOT forget to change for Amazon S3 in the future --}}
                   </div>
                 </div>
               </div>
@@ -75,9 +76,19 @@
     @endforeach
 
 
-<div class="row">
-{{ $cars->links() }}
-</div>
+    <div class="row">
+
+      <div class="col-5">
+      </div>
+
+      <div class="col-2">
+        <div class="row justify-content-center">
+          {{ $cars->links() }}
+        </div>
+      </div>
+
+    </div>
+
 </div>
 
 @endsection

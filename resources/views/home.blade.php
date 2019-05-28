@@ -9,14 +9,14 @@
 <div class="container" id="page">
 
 @if($forSale->count()>0)
-<div class="row" id="sellingHome">
+<div class="row">
 
   <div class="col-lg-3">
   </div>
 
   <div class="col-12 col-lg-6 justify-content-center">
     <div class="card border-info text-center">
-      <h5 class="card-body text-info"> En Vente </h5>
+      <h5 class="card-body text-info" id="sellingHome"> En Vente </h5>
     </div>
   </div>
 
@@ -37,7 +37,7 @@
 
   <!-- forsale -->
 
-  <div class="col-12 col-lg-6 justify-content-center" id="contactHome">
+  <div class="col-12 col-lg-6 justify-content-center">
     <div class="card border-info">
       <h5 class="card-header text-info"> {{$car->make}} </h5>
       <div class="card-body">
