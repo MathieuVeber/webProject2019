@@ -33,7 +33,7 @@
   </div>
 
 
-      <div class="col-12 col-md-6 col-lg-4 ajustMargin">
+      <div class="col-12 col-md-6 ajustMargin">
       <div class="card bg-info">
           <h5 class="card-header text-white text-center">{{$car->license_plate}}</h5>
           <div class="card-body">
@@ -62,7 +62,7 @@
                   <div class="modal-body">
                     <div class="col-8">
                       <?php $res=explode('/',$car->problem_picture) ?>
-                      <img class="img-fluid" src="{{secure_asset($res[0].'/storage/'.$res[1])}}" alt="Photo du choc">
+                      <img class="img-fluid" src="{{secure_asset('/storage/'.$res[1])}}" alt="Photo du choc">
                   </div>
                 </div>
               </div>

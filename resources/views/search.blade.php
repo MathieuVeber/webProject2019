@@ -33,12 +33,6 @@
   <div class="col justify-content-center">
     <div class="card-deck">
 
-      @if($cars->count() == 1)
-      <div class="col-md-3 col-lg-4 ajustMargin"></div>
-      @elseif($cars->count() == 2)
-      <div class="col-lg-2 ajustMargin"></div>
-      @endif
-
       @foreach($cars as $car)
       <div class="col-12 col-md-6 col-lg-4 ajustMargin">
       <div class="card bg-info">
@@ -67,7 +61,9 @@
   </div>
 
   <div class="col-12 col-lg-6 justify-content-center">
-    {{ $cars->links() }}
+    <div>
+      {{ $cars->links() }}
+    </div>
   </div>
 
 </div>
