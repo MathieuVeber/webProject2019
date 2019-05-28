@@ -16,7 +16,7 @@
 
     <div class="col-12 col-lg-6 justify-content-center">
       <div class="card border-info text-center">
-        <h5 class="card-body text-info" id="sellingHome"> Actualités </h5>
+        <h5 class="card-body text-info"> Actualités </h5>
       </div>
     </div>
 
@@ -65,7 +65,7 @@
 
   <div class="col-12 col-lg-6 justify-content-center">
     <div class="card border-info text-center">
-      <h5 class="card-body text-info" id="sellingHome"> En Vente </h5>
+      <h5 class="card-body text-info" id="sellingHome"> Vente de Véhicules </h5>
     </div>
   </div>
 
