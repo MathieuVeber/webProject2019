@@ -19,7 +19,7 @@ class HomeController extends Controller
     else {
       $user=null;
     }
-    $forSale=Car::where('forSale',true)->inRandomOrder()->take(3)->get();
+    $forSale=Car::where('forSale',true)->where('admin',true)->inRandomOrder()->take(3)->get();
     $alert=Cookie::getAlert($request);
 
   return view('home',['id'=>$id, 'user'=>$user, 'forSale'=>$forSale, 'alert'=>$alert]);

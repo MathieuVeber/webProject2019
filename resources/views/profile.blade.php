@@ -125,7 +125,7 @@
             <div class="row">
                 <div class="col-lg-4 col-form-label card-text text-center text-info">Téléphone</div>
                 <div class="col-lg-8">
-                    <input type="number" class="form-control" name="phone" value="{{ $user->phone }}">
+                    <input type="number" class="form-control" name="phone" value="0{{ $user->phone }}">
                     @if ($errors->has('phone'))
                         <small> <div class="alert alert-danger" role="alert"> {{ $errors->first('phone') }} </div> </small>
                     @endif
